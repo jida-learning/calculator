@@ -1,0 +1,109 @@
+@import "variables";
+
+body {
+  background: $primary-color;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  padding: 0;
+
+  h2 {
+    font-size: 45px;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    color: $text-color-primary;
+    text-shadow: 1px 1px 5px $color-shadow;
+  }
+
+  input {
+    cursor: pointer;
+  }
+}
+
+.cuerpo {
+  background: $second-color;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .contenido {
+    width: 400px;
+    height: 450px;
+    background: #a9a9a9;
+    border-radius: 10px;
+    box-shadow: 2px 1px 26px 4px rgba(10, 13, 10, 0.81);
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 85px;
+    grid-gap: 20px;
+
+    .pantalla {
+      background: rgba(22, 19, 14, 0.81);
+      border-radius: 10px;
+      color: rgba(54, 143, 90, 0.81);
+      padding: 15px;
+      grid-column: 1/5;
+    }
+  }
+}
+
+.pantalla > input {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
+  font-size: 50px;
+  width: 100%;
+}
+
+.btn {
+  background: #fff000;
+
+  .btn:hover, .btn:active{
+    background: $color-white;
+  }
+}
+
+.btn__radio {
+  border-radius: 14px;
+}
+
+.btn > input {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+  color: #808080;
+  font-size: 37px;
+  box-shadow: 1px 1px 1px $color-shadow;
+
+  &:hover{
+    transition-duration: 5ms;
+    background: rgba(214,93,58,0.88);
+    color: $color-white;
+  }
+}
+
+.btn > .clean {
+  background: rgba(38,60,157,0.88);
+
+  &:hover {
+    background: rgba(17,47,157,0.88);
+    color: $color-white;
+  }
+}
+
+.btn > .signs {
+  background: rgba(185, 185, 107, 0.71);
+
+  &:hover {
+    transition-duration: 100ms;
+    background: rgba(185, 157, 40, 0.71);
+    color: #fff;
+  }
+}
