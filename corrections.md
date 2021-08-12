@@ -69,5 +69,11 @@ tiene varios puntos positivos
 1. La calculadora no es responsive, es necesario que se pueda adaptar a los distintos dispositivos.
 
 
+### Observaciones de proyecto
+
+1. Es una buena practica agregar siempre un archivo `readme.md` en la raiz
+del proyecto donde expliques de que va el mismo. Agregalo y fijate de este
+si necesitas ver como hacer algo, de igual modo, acá te dejo el 
+[link de la documentación de markdown (este tipo de archivos)](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 ### Notas
 > (si no uso la enie es porque tengo que estar cambiado mi teclado y me da flojera)
