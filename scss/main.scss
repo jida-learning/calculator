@@ -63,7 +63,7 @@ body {
 .btn {
   background: #fff000;
 
-  .btn:hover, .btn:active{
+  .btn:hover, .btn:active {
     background: $color-white;
   }
 }
@@ -82,18 +82,18 @@ body {
   font-size: 37px;
   box-shadow: 1px 1px 1px $color-shadow;
 
-  &:hover{
+  &:hover {
     transition-duration: 5ms;
-    background: rgba(214,93,58,0.88);
+    background: rgba(214, 93, 58, 0.88);
     color: $color-white;
   }
 }
 
 .btn > .clean {
-  background: rgba(38,60,157,0.88);
+  background: rgba(38, 60, 157, 0.88);
 
   &:hover {
-    background: rgba(17,47,157,0.88);
+    background: rgba(17, 47, 157, 0.88);
     color: $color-white;
   }
 }
