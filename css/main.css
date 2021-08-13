@@ -12,11 +12,8 @@ body h2 {
   color: rgba(226, 183, 40, 0.96);
   text-shadow: 1px 1px 5px black;
 }
-body input {
-  cursor: pointer;
-}
 
-.cuerpo {
+.body__calc {
   background: rgba(39, 143, 105, 0.81);
   width: 100%;
   height: 100%;
@@ -24,7 +21,7 @@ body input {
   justify-content: center;
   align-items: center;
 }
-.cuerpo .contenido {
+.body__calc .content {
   width: 400px;
   height: 450px;
   background: #a9a9a9;
@@ -36,7 +33,7 @@ body input {
   grid-template-rows: 85px;
   grid-gap: 20px;
 }
-.cuerpo .contenido .pantalla {
+.body__calc .content .screen {
   background: rgba(22, 19, 14, 0.81);
   border-radius: 10px;
   color: rgba(54, 143, 90, 0.81);
@@ -44,7 +41,7 @@ body input {
   grid-column: 1/5;
 }
 
-.pantalla > input {
+.screen > input {
   background: none;
   color: inherit;
   border: none;
@@ -65,36 +62,38 @@ body input {
   border-radius: 14px;
 }
 
-.btn > input {
+input {
   border: 0;
   height: 100%;
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
   outline: none;
-  color: #808080;
+  color: rgba(8, 8, 10, 0.67);
   font-size: 37px;
   box-shadow: 1px 1px 1px black;
 }
-.btn > input:hover {
-  transition-duration: 5ms;
+input:hover {
+  transition-duration: 100ms;
   background: rgba(214, 93, 58, 0.88);
   color: #fff;
 }
 
-.btn > .clean {
+.clean {
   background: rgba(38, 60, 157, 0.88);
 }
-.btn > .clean:hover {
+.clean:hover {
+  transition-duration: 100ms;
   background: rgba(17, 47, 157, 0.88);
   color: #fff;
 }
 
-.btn > .signs {
-  background: rgba(185, 185, 107, 0.71);
+.signs {
+  background: rgba(185, 160, 49, 0.96);
 }
-.btn > .signs:hover {
+.signs:hover {
   transition-duration: 100ms;
-  background: rgba(185, 157, 40, 0.71);
+  background: rgba(185, 150, 22, 0.96);
   color: #fff;
 }
 

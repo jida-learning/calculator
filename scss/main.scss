@@ -12,15 +12,11 @@ body {
     margin: 20px;
     padding: 10px;
     color: $text-color-primary;
-    text-shadow: 1px 1px 5px $color-shadow;
-  }
-
-  input {
-    cursor: pointer;
+    text-shadow: 1px 1px 5px $shadow-color;
   }
 }
 
-.cuerpo {
+.body__calc {
   background: $second-color;
   width: 100%;
   height: 100%;
@@ -28,7 +24,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  .contenido {
+  .content {
     width: 400px;
     height: 450px;
     background: #a9a9a9;
@@ -40,7 +36,7 @@ body {
     grid-template-rows: 85px;
     grid-gap: 20px;
 
-    .pantalla {
+    .screen {
       background: rgba(22, 19, 14, 0.81);
       border-radius: 10px;
       color: rgba(54, 143, 90, 0.81);
@@ -50,21 +46,23 @@ body {
   }
 }
 
-.pantalla > input {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  outline: inherit;
-  font-size: 50px;
-  width: 100%;
+.screen {
+  > input {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    outline: inherit;
+    font-size: 50px;
+    width: 100%;
+  }
 }
 
 .btn {
   background: #fff000;
 
   .btn:hover, .btn:active {
-    background: $color-white;
+    background: $white;
   }
 }
 
@@ -72,38 +70,41 @@ body {
   border-radius: 14px;
 }
 
-.btn > input {
+input {
   border: 0;
   height: 100%;
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
   outline: none;
-  color: #808080;
+  color: rgba(8,8,10,0.67);
   font-size: 37px;
-  box-shadow: 1px 1px 1px $color-shadow;
-
-  &:hover {
-    transition-duration: 5ms;
-    background: rgba(214, 93, 58, 0.88);
-    color: $color-white;
-  }
-}
-
-.btn > .clean {
-  background: rgba(38, 60, 157, 0.88);
-
-  &:hover {
-    background: rgba(17, 47, 157, 0.88);
-    color: $color-white;
-  }
-}
-
-.btn > .signs {
-  background: rgba(185, 185, 107, 0.71);
+  box-shadow: 1px 1px 1px $shadow-color;
 
   &:hover {
     transition-duration: 100ms;
-    background: rgba(185, 157, 40, 0.71);
-    color: #fff;
+    background: rgba(214, 93, 58, 0.88);
+    color: $white;
+  }
+}
+
+
+.clean {
+  background: rgba(38, 60, 157, 0.88);
+
+  &:hover {
+    transition-duration: 100ms;
+    background: rgba(17, 47, 157, 0.88);
+    color: $white;
+  }
+}
+
+.signs {
+  background: rgba(185,160,49,0.96);
+
+  &:hover {
+    transition-duration: 100ms;
+    background: rgba(185,150,22,0.96);
+    color: $white;
   }
 }
