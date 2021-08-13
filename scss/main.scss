@@ -27,9 +27,9 @@ body {
   .content {
     width: 400px;
     height: 450px;
-    background: #a9a9a9;
+    background: $content-background-color;
     border-radius: 10px;
-    box-shadow: 2px 1px 26px 4px rgba(10, 13, 10, 0.81);
+    box-shadow: 2px 1px 26px 4px $content-shadow-color;
     padding: 20px 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -37,9 +37,9 @@ body {
     grid-gap: 20px;
 
     .screen {
-      background: rgba(22, 19, 14, 0.81);
+      background: $screen-background-color;
       border-radius: 10px;
-      color: rgba(54, 143, 90, 0.81);
+      color: $screen-color;
       padding: 15px;
       grid-column: 1/5;
     }
@@ -55,56 +55,55 @@ body {
     outline: inherit;
     font-size: 50px;
     width: 100%;
+
+    .btn {
+      background: $btn-background-color;
+
+      .btn:hover, .btn:active {
+        background: $white;
+
+        .btn__radio {
+          border-radius: 14px;
+        }
+      }
+    }
   }
 }
 
-.btn {
-  background: #fff000;
-
-  .btn:hover, .btn:active {
-    background: $white;
-  }
-}
-
-.btn__radio {
-  border-radius: 14px;
-}
-
-input {
+.nums, .signs, .clean {
   border: 0;
   height: 100%;
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
   outline: none;
-  color: rgba(8,8,10,0.67);
+  color: $class-color;
   font-size: 37px;
   box-shadow: 1px 1px 1px $shadow-color;
 
   &:hover {
     transition-duration: 100ms;
-    background: rgba(214, 93, 58, 0.88);
+    background: $primary-hover-color;
     color: $white;
   }
 }
 
-
 .clean {
-  background: rgba(38, 60, 157, 0.88);
+  background: $clean-background-color;
 
   &:hover {
     transition-duration: 100ms;
-    background: rgba(17, 47, 157, 0.88);
+    background: $clean-hover-color;
     color: $white;
   }
 }
 
 .signs {
-  background: rgba(185,160,49,0.96);
+  background: $signs-background-color;
 
   &:hover {
     transition-duration: 100ms;
-    background: rgba(185,150,22,0.96);
+    background: $signs-hover-color;
     color: $white;
   }
 }

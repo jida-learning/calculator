@@ -50,19 +50,17 @@ body h2 {
   font-size: 50px;
   width: 100%;
 }
-
-.btn {
+.screen > input .btn {
   background: #fff000;
 }
-.btn .btn:hover, .btn .btn:active {
+.screen > input .btn .btn:hover, .screen > input .btn .btn:active {
   background: #fff;
 }
-
-.btn__radio {
+.screen > input .btn .btn:hover .btn__radio, .screen > input .btn .btn:active .btn__radio {
   border-radius: 14px;
 }
 
-input {
+.nums, .signs, .clean {
   border: 0;
   height: 100%;
   width: 100%;
@@ -73,7 +71,7 @@ input {
   font-size: 37px;
   box-shadow: 1px 1px 1px black;
 }
-input:hover {
+.nums:hover, .signs:hover, .clean:hover {
   transition-duration: 100ms;
   background: rgba(214, 93, 58, 0.88);
   color: #fff;
