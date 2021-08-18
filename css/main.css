@@ -1,98 +1,17 @@
-body {
-  background: rgba(50, 143, 20, 0.81);
-  font-family: "Indie Flower", cursive;
-  margin: 0;
-  padding: 0;
-}
-body h2 {
-  font-size: 45px;
-  text-align: center;
-  margin: 20px;
-  padding: 10px;
-  color: rgba(226, 183, 40, 0.96);
-  text-shadow: 1px 1px 5px black;
-}
+/* Error: expected "{".
+ *     ,
+ * 112 | @media screen {max-width: 800px;
+ *     |                                ^
+ *     '
+ *   main.scss 112:32  root stylesheet */
 
-.body__calc {
-  background: rgba(39, 143, 105, 0.81);
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 112 \2502  @media screen {max-width: 800px;\d\a     \2502                                 ^\a     \2575 \a   main.scss 112:32  root stylesheet';
 }
-.body__calc .content {
-  width: 400px;
-  height: 450px;
-  background: #a9a9a9;
-  border-radius: 10px;
-  box-shadow: 2px 1px 26px 4px rgba(10, 13, 10, 0.81);
-  padding: 20px 15px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 85px;
-  grid-gap: 20px;
-}
-.body__calc .content .screen {
-  background: rgba(22, 19, 14, 0.81);
-  border-radius: 10px;
-  color: rgba(54, 143, 90, 0.81);
-  padding: 15px;
-  grid-column: 1/5;
-}
-
-.screen > input {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  outline: inherit;
-  font-size: 50px;
-  width: 100%;
-}
-.screen > input .btn {
-  background: #fff000;
-}
-.screen > input .btn .btn:hover, .screen > input .btn .btn:active {
-  background: #fff;
-}
-.screen > input .btn .btn:hover .btn__radio, .screen > input .btn .btn:active .btn__radio {
-  border-radius: 14px;
-}
-
-.nums, .signs, .clean {
-  border: 0;
-  height: 100%;
-  width: 100%;
-  border-radius: 10px;
-  cursor: pointer;
-  outline: none;
-  color: rgba(8, 8, 10, 0.67);
-  font-size: 37px;
-  box-shadow: 1px 1px 1px black;
-}
-.nums:hover, .signs:hover, .clean:hover {
-  transition-duration: 100ms;
-  background: rgba(214, 93, 58, 0.88);
-  color: #fff;
-}
-
-.clean {
-  background: rgba(38, 60, 157, 0.88);
-}
-.clean:hover {
-  transition-duration: 100ms;
-  background: rgba(17, 47, 157, 0.88);
-  color: #fff;
-}
-
-.signs {
-  background: rgba(185, 160, 49, 0.96);
-}
-.signs:hover {
-  transition-duration: 100ms;
-  background: rgba(185, 150, 22, 0.96);
-  color: #fff;
-}
-
-/*# sourceMappingURL=main.css.map */

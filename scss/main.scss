@@ -35,6 +35,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 85px;
     grid-gap: 20px;
+    box-sizing: border-box;
 
     .screen {
       background: $screen-background-color;
@@ -106,4 +107,8 @@ body {
     background: $signs-hover-color;
     color: $white;
   }
+}
+
+@media screen {max-width: 800px;
+  
 }
