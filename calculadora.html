@@ -5,52 +5,49 @@
     <title>Calculadora</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+    <script src="js/_script.js"></script>
 </head>
 <body>
 
 <h2>Calculadora</h2>
-
-<div class="body__calc">
-
-
+<section class="body__calc">
     <div class="content">
-        <div class="screen">
-            <input type="text" placeholder="0" disabled id="result">
-        </div>
-        <input type="button" class="nums" value="7">
+        <form class="screen">
+            <input type="text" placeholder="0" disabled id="screen__result">
+        </form>
+        <input type="button" class="nums" value="7" onclick="operacion">
 
-        <input type="button" class="nums" value="8">
+        <input type="button" class="nums" value="8" onclick="operacion">
 
-        <input type="button" class="nums" value="9">
+        <input type="button" class="nums" value="9" onclick="operacion">
 
-        <input type="button" class="signs" value="+">
+        <input type="button" class="signs" value="+" onclick="operacion">
 
-        <input type="button" class="nums" class="nums" value="4">
+        <input type="button" class="nums" value="4" onclick="operacion">
 
-        <input type="button" class="nums" class="nums" value="5">
+        <input type="button" class="nums" value="5" onclick="operacion">
 
-        <input type="button" class="nums" class="nums" value="6">
+        <input type="button" class="nums" value="6" onclick="operacion">
 
-        <input type="button" class="signs" value="-">
+        <input type="button" class="signs" value="-" onclick="operacion">
 
-        <input type="button" class="nums" value="1">
+        <input type="button" class="nums" value="1" onclick="operacion">
 
-        <input type="button" class="nums" value="2">
+        <input type="button" class="nums" value="2" onclick="operacion">
 
-        <input type="button" class="nums" value="3">
+        <input type="button" class="nums" value="3" onclick="operacion">
 
-        <input type="button" class="signs" value="x">
+        <input type="button" class="signs" value="x" onclick="operacion">
 
-        <input type="button" class="nums" value="0">
+        <input type="button" class="nums" value="0" onclick="operacion">
 
-        <input type="button" class="nums" value=".">
+        <input type="button" class="nums" value="." onclick="operacion">
 
-        <input type="button" class="clean" value="C">
+        <input type="button" class="clean" value="C" onclick="operacion">
 
-        <input type="button" class="signs" value="=">
+        <input type="button" class="signs" value="=" onclick="operacion">
     </div>
-</div>
+</section>
 </div>
 </body>
 </html>
