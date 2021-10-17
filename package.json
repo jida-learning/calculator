@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass  scss/main.scss css/main-test.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jida-learning/calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jida-learning/calculator/issues"
+  },
+  "homepage": "https://github.com/jida-learning/calculator#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
