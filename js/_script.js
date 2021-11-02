@@ -13,24 +13,21 @@ const execute = () => {
     const result = document.getElementById('result');
     const nums = document.querySelectorAll('.nums');
     const signs = document.querySelectorAll('.signs');
+
     //Declaraciones de variables
     let screenValue;
     let inMemoryValue;
     let operando;
     let inMemoryOperando;
-    // console.log("NUMEROS", nums);
 
     //Eventos click
     nums.forEach(element => {
-        // console.log(1, element.value)
         const pressNumber = event => {
             console.log("HOLA MUNDO", operando);
             if (operando) {
                 inMemoryValue = screenValue
                 screen.value = undefined;
-
             }
-
             const target = event.currentTarget;
             const result = screen.value
                 ? `${screen.value}${target.value}`
@@ -43,15 +40,14 @@ const execute = () => {
     function clean() {
         result.textContent = "";
     }
-
     signs.forEach(element => {
-        // console.log(signs);
         const pressSign = event => {
             inMemoryOperando = operando = event.currentTarget.value;
             screenValue = screen.value;
-            if (ope) {
-                inMemoryValue
-                let rest;
+            if (inMemoryValue) {
+                //si hay un valor en la memoria, busco reemplazar el valor de la pantalla por el resultado del numero en pantalla y la operacion con el numero de memoria
+                screen.value = result
+                clean()
             }
         }
 
@@ -74,7 +70,7 @@ const execute = () => {
                 res = parseFloat(nums) / parseFloat(operando);
                 break;
         }
-        resetear();
+        clean();
         screenValue = res;
     }
 }
