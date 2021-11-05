@@ -25,13 +25,13 @@ const execute = () => {
     //Eventos click
     nums.forEach(element => {
         const pressNumber = event => {
-            // console.log("HOLA MUNDO", operando);
             if (operando) {
+                console.log(screen.value);
                 inMemoryValue = screenValue
                 screen.value = '';
             }
             const target = event.currentTarget;
-            console.log('LISTO', screen.value, target.value);
+            // console.log('LISTO', screen.value, target.value);
             const result = screen.value
                 ? `${screen.value}${target.value}`
                 : target.value;
@@ -47,20 +47,23 @@ const execute = () => {
             screenValue = screen.value;
             if (inMemoryValue) {
                 const result = operations(inMemoryOperando, screenValue, inMemoryValue);
-                //si hay un valor en la memoria, busco reemplazar el valor de la pantalla por el resultado del numero en pantalla y la operacion con el numero de memoria
                 screen.value = result
+                console.log(1, result);
+            }else{
+                console.log(77, result);
             }
         }
 
         element.addEventListener('click', pressSign);
     })
 
-    delet.addEventListener('click', () => {
-        deleteNumber.substr(0, -1);
-        screen.value = deleteNumber;
-    })
+    // delet.addEventListener('click', () => {
+    //     deleteNumber.substr(0, -1);
+    //     screen.value = deleteNumber;
+    // })
 
     function operations(op, valueA, valueB) {
+        // console.log(valueA, valueB);
         res = 0;
         switch (op) {
             case "+":
@@ -79,7 +82,6 @@ const execute = () => {
                 break;
         }
         return res;
-        console.log(operations(op, valueA, valueB));
     }
 }
 
