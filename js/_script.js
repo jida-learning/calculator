@@ -25,6 +25,7 @@ const execute = () => {
     //Eventos click
     nums.forEach(element => {
         const pressNumber = event => {
+            console.log(11, operando);
             if (operando) {
                 console.log(screen.value);
                 inMemoryValue = screenValue
@@ -32,6 +33,7 @@ const execute = () => {
             }
             const target = event.currentTarget;
             // console.log('LISTO', screen.value, target.value);
+            console.log(12, screen.value)
             const result = screen.value
                 ? `${screen.value}${target.value}`
                 : target.value;
@@ -49,7 +51,8 @@ const execute = () => {
                 const result = operations(inMemoryOperando, screenValue, inMemoryValue);
                 screen.value = result
                 console.log(1, result);
-            }else{
+            }
+            else {
                 console.log(77, result);
             }
         }
