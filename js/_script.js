@@ -27,18 +27,19 @@ const execute = () => {
         const pressNumber = event => {
             console.log(11, operando);
             if (operando) {
-                console.log(screen.value);
+                console.log(11.1, screen.value);
                 inMemoryValue = screenValue
                 screen.value = '';
             }
             const target = event.currentTarget;
             // console.log('LISTO', screen.value, target.value);
-            console.log(12, screen.value)
+
+            console.log(screen.value);
             const result = screen.value
-                ? `${screen.value}${target.value}`
-                : target.value;
-            screen.value = parseFloat(result);
-            screenValue = screen.value;
+                ? parseFloat(`${screen.value}${target.value}`)
+                : parseFloat(target.value);
+            screen.value = result;
+            screenValue = result;
         };
         element.addEventListener('click', pressNumber);
     })
@@ -46,7 +47,7 @@ const execute = () => {
     signs.forEach(element => {
         const pressSign = event => {
             inMemoryOperando = operando = event.currentTarget.value;
-            screenValue = screen.value;
+            // screenValue = screen.value;
             if (inMemoryValue) {
                 const result = operations(inMemoryOperando, screenValue, inMemoryValue);
                 screen.value = result
